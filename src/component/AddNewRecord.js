@@ -84,9 +84,8 @@ const AddNewRecord = () => {
           placeholder="Employee Name"
           onChange={(data) => {
             if (
-              /^[a-zA-Z]+$/.test(data.target.value) ||
-              data.target.value === "" ||
-              data.target.value === " "
+              /^[a-zA-Z ]*$/.test(data.target.value) ||
+              data.target.value === ""
             ) {
               handleChange(data);
             }
