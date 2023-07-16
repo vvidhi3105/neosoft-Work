@@ -145,23 +145,37 @@ button {
   width:93%
 }
 
-@media only screen and (max-width: 992px) {
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #tableList, #form-container {
+    width: 90%;
+  }
+  #tableList #filter-pannel label {
+    width: 15%;
+  }
+  #form-container div{
+    width:45%;
+  }
+}
+@media only screen and (max-width: 767px){
   #form-container div {
-    width: 95%;
-    margin: auto;
-    float: none;
-    margin-bottom: 10px;
-  }
-  .form-control {
-    width: 96.5%;
-  }
-  #form-container div:last-child {
-    margin-right: 2.5%;
-  }
+    width: 100%;
+    margin-left: 22px;
+}
+#form-container div:nth-child(4) div{
+  margin-bottom:0
+}
+#tableList, #form-container{
+  width:90%
+}
+#tableList #filter-pannel label {
+    width: 15%;
+}
+body, .form-control {
+    font-size: 10px;
+}
+#tableList table tr th svg{
+  margin-top:2px;
+}
 }
 
-@media only screen and (max-width: 767px) {
-  .form-control {
-    width: 93.5%;
-  }
-}
